@@ -18,8 +18,8 @@ Avant de commencer, assurez-vous d'avoir installé :
 
 ### Étapes d'installation
 
-1. Clonez ce dépôt : `git clone `
-2. Rendez-vous dans le répertoire du projet : `cd `
+1. Clonez ce dépôt : `git clone https://github.com/SandrineOrieux/Garage-V-Parrot.git`
+2. Rendez-vous dans le répertoire du projet : `cd Garage-V-Parrot`
 3. -1 Installez les dépendances via Composer : `composer install`
 3. -2 Installez les dépendances via npm : `npm install`
 4. Configurer le fichier .env pour la base de données et le mail
