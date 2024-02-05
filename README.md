@@ -86,6 +86,10 @@ https://axios-http.com/fr/docs/intro
 https://www.legalplace.fr/guides/politique-de-confidentialite-rgpd/
 https://www.legalplace.fr/guides/mentions-legales/
 
+- faker :
+https://fakerphp.github.io/
+
+
 
 
 
