@@ -1,5 +1,17 @@
-body {
-    background-color: skyblue;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+// customize some Bootstrap variables
+
+// //color
+$primary: rgb(1, 17, 9);
+$secondary: rgb(55, 4, 14);
+$success: rgb(196, 52, 18);
+$info: rgb(125, 14, 19);
+$light: rgb(255, 255, 255);
+
+// //font
+
+$font-family-sans-serif: 'open sans';
+$font-size-base: 1.5rem;
+$font-size-lg: $font-size-base;
 
 @import "~bootstrap/scss/bootstrap";
