@@ -1,8 +1,6 @@
 <header class="container-lg ml-3 ml-lg-0 d-flex flex-wrap align-items-center justify-content-center justify-content-md-between border-bottom border-success">
-	<div class="col-12 col-md-3 mb-2 mb-md-0">
-		<a href="{{path('app_home')}}" class="d-inline-flex link-body-emphasis text-decoration-none">
-			<img src="{{asset('build/images/logo.png')}}" alt="Logo du garage" class="img-thumbnail border-0">
-		</a>
+	<div class="col-12 col-md-3 mb-2 mb-md-0 d-flex justify-content-center">
+		{% include "/partials/_displaylogo.html.twig" %}
 	</div>
 
 	<nav class="navbar navbar-expand-md col-6 col-md-7" aria-label="Fourth navbar example">

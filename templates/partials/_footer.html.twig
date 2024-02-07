@@ -1,0 +1,83 @@
+<footer class="container py-5 border-top border-success">
+	<div class="row">
+		<div class="col-12 col-md-4 col-lg-3">
+			<h5 class="text-info">Horaires d'ouverture</h5>
+			<ul class="nav flex-column">
+				{% for open in openingHours.getopeningHours() %}
+					<li class="nav-item mb-2">
+						{{open.day}}
+						:
+						{% if not open.am or not open.pm  %}
+							Fermé
+						{% else %}
+							{% if open.am %}
+								{{open.am}}
+							{% else %}
+								Fermé
+							{% endif %}
+							/
+							{% if open.pm %}
+								{{open.pm}}
+							{% else %}
+								Fermé
+							{% endif %}
+
+
+						{% endif %}
+
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+		<div class="col-12 col-md-4 col-lg-3">
+			<h5>Section</h5>
+			<ul class="nav flex-column">
+				<li class="nav-item mb-2">
+					<a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+				</li>
+				<li class="nav-item mb-2">
+					<a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+				</li>
+				<li class="nav-item mb-2">
+					<a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+				</li>
+				<li class="nav-item mb-2">
+					<a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+				</li>
+				<li class="nav-item mb-2">
+					<a href="#" class="nav-link p-0 text-body-secondary">About</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="col-12 col-md-4 col-lg-3">
+			<h5>Section</h5>
+			<ul class="nav flex-column">
+				<li class="nav-item mb-2">
+					<a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+				</li>
+				<li class="nav-item mb-2">
+					<a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+				</li>
+				<li class="nav-item mb-2">
+					<a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+				</li>
+				<li class="nav-item mb-2">
+					<a href="#" class="nav-link p-0 text-body-secondary ">FAQs</a>
+				</li>
+				<li class="nav-item mb-2">
+					<a href="#" class="nav-link p-0 text-body-secondary">About</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="col col-lg-3 d-flex justify-content-center">
+			{% include "/partials/_displaylogo.html.twig" %}
+		</div>
+	</div>
+
+	<div class="row">
+		<p>© 2023 Company, Inc. All rights reserved.</p>
+	</div>
+</footer>
