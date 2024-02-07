@@ -1,0 +1,24 @@
+<div id="carouselExampleAutoplaying" class="carousel slide my-3" data-bs-ride="carousel">
+
+	<div class="carousel-inner">
+
+		{% for repairService in repairServices %}
+			<div class="carousel-item active">
+				<img src="{{asset('build/images/outils.png')}}" class="d-block w-100 opacity-25" alt="...">
+				<div class="carousel-caption d-block text-secondary">
+					<h5 class="text-info font-monospace">{{repairService.name}}
+					</h5>
+					<p>{{repairService.description}}</p>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	</button>
+</div>

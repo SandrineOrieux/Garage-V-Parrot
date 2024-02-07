@@ -7,7 +7,7 @@
 					<li class="nav-item mb-2">
 						{{open.day}}
 						:
-						{% if not open.am or not open.pm  %}
+						{% if not open.am and not open.pm  %}
 							Fermé
 						{% else %}
 							{% if open.am %}
@@ -73,7 +73,7 @@
 		</div>
 
 		<div class="col col-lg-3 d-flex justify-content-center">
-			{% include "/partials/_displaylogo.html.twig" %}
+			{% include "/partials/logo/_displaylogo.html.twig" %}
 		</div>
 	</div>
 

@@ -11,16 +11,15 @@
 			{{ encore_entry_link_tags('app') }}
 		{% endblock %}
 
-		{% block javascripts %}
-			{{ encore_entry_script_tags('app') }}
-			{% block importmap %}
-				{{ importmap('app') }}
-			{% endblock %}
-		{% endblock %}
+
 	</head>
 	<body class="container text-primary">
 		{% include "/partials/_header.html.twig" %}
 		{% block body %}{% endblock %}
 		{% include "/partials/_footer.html.twig" %}
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+
+		{% endblock %}
 	</body>
 </html>

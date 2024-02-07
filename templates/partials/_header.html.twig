@@ -1,6 +1,6 @@
 <header class="container-lg ml-3 ml-lg-0 d-flex flex-wrap align-items-center justify-content-center justify-content-md-between border-bottom border-success">
 	<div class="col-12 col-md-3 mb-2 mb-md-0 d-flex justify-content-center">
-		{% include "/partials/_displaylogo.html.twig" %}
+		{% include "/partials/logo/_displaylogo.html.twig" %}
 	</div>
 
 	<nav class="navbar navbar-expand-md col-6 col-md-7" aria-label="Fourth navbar example">
@@ -18,7 +18,7 @@
 						<a class="nav-link font-monospace {% if app.request.pathinfo == '/contact' %}text-info {% else %}text-secondary {% endif %}  fs-4" href="{{path('app_contact')}}">Contact</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link font-monospace text-secondary  fs-4" aria-disabled="true">Véhicules</a>
+						<a class="nav-link font-monospace {% if app.request.pathinfo == '/contact' %}text-info {% else %}text-secondary {% endif %}  fs-4" href="{{path('app_vehicles')}}">Véhicules</a>
 					</li>
 				</ul>
 			</div>
