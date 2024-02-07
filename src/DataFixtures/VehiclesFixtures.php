@@ -18,7 +18,7 @@ class VehiclesFixtures extends Fixture
 
 
 
-    for ($vehicle = 1; $vehicle <= 2; $vehicle++) {
+    for ($vehicle = 1; $vehicle <= 15; $vehicle++) {
       $brand = $this->getReference('Brand_' . $faker->numberBetween(1, 10));
       $model = $this->getReference('Model_' . $faker->numberBetween(0, 4));
       $energie = $this->getReference('Energy_' . $faker->numberBetween(0, 3));
@@ -55,7 +55,7 @@ class VehiclesFixtures extends Fixture
         $newVehicle->addOption($option);
       }
 
-      for ($i = 1; $i <= 2; $i++) {
+      for ($i = 1; $i <= 4; $i++) {
         // $img = $faker->image('public/images/parrot', 640, 480);
         // $nomImg = basename($img);
         $imgVehicles = new ImagesVehicle();

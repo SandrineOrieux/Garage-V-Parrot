@@ -1,0 +1,22 @@
+<div class="shadow-sm card col-12 col-md-4 col-lg-3 border-0 border-end border-bottom border-info p-0" style="width: 18rem;">
+	<div class="card-img-top">
+		{% include "/partials/vehicles/_carouselImageVoiture.html.twig" %}
+	</div>
+	<div class="container-fluid card-body">
+		<h5 class="col-12 card-title text-info fw-bold ">{{vehicle.brand}}
+			{{vehicle.model}}</h5>
+		<p class="col-12 card-text fst-italic">{{vehicle.title}}</p>
+		<div class="row nowrap">
+			<p class="col-3 card-text fw-lighter text-nowrap text-center">{{vehicle.year|date('Y')}}</p>
+			<p class="col-4 card-text fw-lighter text-nowrap text-center">{{vehicle.kilometer}}
+				km</p>
+			<p class="col-5 card-text fw-lighter text-nowrap text-center">{{vehicle.transmission}}</p>
+		</div>
+
+		<p class="col-12 card-text">{{vehicle.energy}}</p>
+		<p class="col-12 card-text font-monospace text-info text-center">{{vehicle.price}}
+			€</p>
+
+
+	</div>
+</div>

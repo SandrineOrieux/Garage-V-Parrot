@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Occasions
+{% endblock %}
+
+{% block body %}
+	<div class="row gap-3 d-flex justify-content-center my-3">
+		{% for vehicle in vehiclesList %}
+			{% include "/partials/vehicles/_vehiculeCard.html.twig" %}
+		{% endfor %}
+	</div>
+
+{% endblock %}

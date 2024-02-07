@@ -13,7 +13,7 @@ class PageController extends AbstractController
     public function index(RepairServiceRepository $repoService): Response
     {
         $repairServices = $repoService->findAll();
-        dump($repairServices);
+
         return $this->render('home/index.html.twig', [
             'repairServices' => $repairServices
         ]);

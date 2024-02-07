@@ -1,0 +1,10 @@
+<div id="carouselExampleIndicators" class="carousel slide w-100 m-0 p-0 ">
+	<div class="carousel-inner">
+		{% for image in vehicle.images %}
+			<div class="carousel-item active">
+				<img src="{{vich_uploader_asset(image, 'imageFile')}}" class="d-block w-100 card-img-top" alt="...">
+			</div>
+		{% endfor %}
+	</div>
+
+</div>

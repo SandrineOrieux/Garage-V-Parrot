@@ -79,6 +79,8 @@ class Vehicle
     #[ORM\ManyToMany(targetEntity: Option::class, inversedBy: 'vehicles')]
     private Collection $options;
 
+
+
     public function __construct()
     {
         $this->images = new ArrayCollection();
@@ -299,6 +301,8 @@ class Vehicle
 
         return $this;
     }
+
+
 
     /**
      * @return Collection<int, Option>
