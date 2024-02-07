@@ -16,6 +16,10 @@ class NumberOfSeats
 
     #[ORM\Column(type: Types::SMALLINT)]
     private ?int $number = null;
+    public function __toString()
+    {
+        return $this->getNumber() . ' places';
+    }
 
     public function getId(): ?int
     {

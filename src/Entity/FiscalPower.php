@@ -16,6 +16,11 @@ class FiscalPower
 
     #[ORM\Column(type: Types::SMALLINT)]
     private ?int $number = null;
+    public function __toString()
+    {
+        return $this->getNumber() . ' CV';
+    }
+
 
     public function getId(): ?int
     {

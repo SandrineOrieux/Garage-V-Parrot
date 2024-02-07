@@ -17,6 +17,12 @@ class Power
     #[ORM\Column(type: Types::SMALLINT)]
     private ?int $number = null;
 
+    public function __toString()
+    {
+        return $this->getNumber() . ' ch';
+    }
+
+
     public function getId(): ?int
     {
         return $this->id;

@@ -2,7 +2,7 @@ vich_uploader:
     db_driver: orm
 
     mappings:
-       garage-v-parrot:
-           uri_prefix: /images/garage-v-parrot
-           upload_destination: '%kernel.project_dir%/public/images/garage-v-parrot'
+       parrot:
+           uri_prefix: /images/parrot
+           upload_destination: '%kernel.project_dir%/public/images/parrot'
            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer

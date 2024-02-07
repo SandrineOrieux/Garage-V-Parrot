@@ -53,14 +53,14 @@ class RepairService
         return $this;
     }
 
-    public function getUser(): ?User
+    public function getCreatedBy(): ?User
     {
         return $this->createdBy;
     }
 
-    public function setUser(?User $user): static
+    public function setCreatedBy(?User $createdBy): static
     {
-        $this->createdBy = $user;
+        $this->createdBy = $createdBy;
 
         return $this;
     }

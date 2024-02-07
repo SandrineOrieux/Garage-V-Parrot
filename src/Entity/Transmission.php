@@ -15,6 +15,10 @@ class Transmission
 
     #[ORM\Column(length: 100)]
     private ?string $name = null;
+    public function __toString()
+    {
+        return $this->getName();
+    }
 
     public function getId(): ?int
     {

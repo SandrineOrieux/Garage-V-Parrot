@@ -19,6 +19,11 @@ class TimeSlot
     #[ORM\Column(length: 5)]
     private ?string $end = null;
 
+    public function __toString()
+    {
+        return $this->getStart() . ' - ' . $this->getEnd();
+    }
+
     public function getId(): ?int
     {
         return $this->id;

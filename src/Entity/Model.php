@@ -21,9 +21,17 @@ class Model
     #[ORM\OneToMany(mappedBy: 'model', targetEntity: Vehicle::class)]
     private Collection $vehicles;
 
+    #[ORM\ManyToOne(inversedBy: 'models')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Brand $brand = null;
+
     public function __construct()
     {
         $this->vehicles = new ArrayCollection();
+    }
+    public function __toString()
+    {
+        return $this->getName();
     }
 
     public function getId(): ?int
@@ -69,6 +77,18 @@ class Model
                 $vehicle->setModel(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getBrand(): ?Brand
+    {
+        return $this->brand;
+    }
+
+    public function setBrand(?Brand $brand): static
+    {
+        $this->brand = $brand;
 
         return $this;
     }

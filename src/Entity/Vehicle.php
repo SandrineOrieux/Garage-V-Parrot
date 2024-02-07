@@ -3,10 +3,12 @@
 namespace App\Entity;
 
 use App\Repository\VehicleRepository;
+use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints\Date;
 
 #[ORM\Entity(repositoryClass: VehicleRepository::class)]
 class Vehicle
@@ -19,8 +21,8 @@ class Vehicle
     #[ORM\Column(length: 255)]
     private ?string $title = null;
 
-    #[ORM\Column(type: Types::DATE_IMMUTABLE)]
-    private ?\DateTimeImmutable $year = null;
+    #[ORM\Column(type: Types::DATE_MUTABLE)]
+    private ?DateTime $year = null;
 
     #[ORM\Column]
     private ?int $kilometer = null;
@@ -71,7 +73,7 @@ class Vehicle
     #[ORM\JoinColumn(nullable: false)]
     private ?FiscalPower $fiscalPower = null;
 
-    #[ORM\OneToMany(mappedBy: 'vehicle', targetEntity: ImagesVehicle::class, orphanRemoval: true)]
+    #[ORM\OneToMany(mappedBy: 'vehicle', targetEntity: ImagesVehicle::class, orphanRemoval: true, cascade: ["persist", "remove", "refresh", "merge"])]
     private Collection $images;
 
     #[ORM\ManyToMany(targetEntity: Option::class, inversedBy: 'vehicles')]
@@ -100,12 +102,12 @@ class Vehicle
         return $this;
     }
 
-    public function getYear(): ?\DateTimeImmutable
+    public function getYear(): ?DateTime
     {
         return $this->year;
     }
 
-    public function setYear(\DateTimeImmutable $year): static
+    public function setYear(DateTime $year): static
     {
         $this->year = $year;
 

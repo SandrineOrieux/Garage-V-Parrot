@@ -54,6 +54,10 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         $this->contacts = new ArrayCollection();
         $this->vehicles = new ArrayCollection();
     }
+    public function __toString()
+    {
+        return $this->getFirstname() . ' ' . $this->getLastname();
+    }
 
     public function getId(): ?int
     {

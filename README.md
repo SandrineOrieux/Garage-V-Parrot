@@ -89,6 +89,10 @@ https://www.legalplace.fr/guides/mentions-legales/
 - faker :
 https://fakerphp.github.io/
 
+- traits :
+https://www.php.net/manual/fr/language.oop5.traits.php
+
+
 
 
 

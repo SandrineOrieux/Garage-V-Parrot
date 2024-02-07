@@ -16,6 +16,10 @@ class NumberOfDoors
 
     #[ORM\Column(type: Types::SMALLINT)]
     private ?int $number = null;
+    public function __toString()
+    {
+        return $this->getNumber() . ' portes';
+    }
 
     public function getId(): ?int
     {

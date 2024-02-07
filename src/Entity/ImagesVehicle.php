@@ -16,7 +16,7 @@ class ImagesVehicle
     #[ORM\Column]
     private ?int $id = null;
 
-    #[Vich\UploadableField(mapping: 'products', fileNameProperty: 'imageName', size: 'imageSize')]
+    #[Vich\UploadableField(mapping: 'parrot', fileNameProperty: 'imageName', size: 'imageSize')]
     private ?File $imageFile = null;
 
     #[ORM\Column(nullable: true)]
@@ -31,6 +31,11 @@ class ImagesVehicle
     #[ORM\ManyToOne(inversedBy: 'images')]
     #[ORM\JoinColumn(nullable: false)]
     private ?Vehicle $vehicle = null;
+
+    // public function __toString()
+    // {
+    //     return $this->getImageName();
+    // }
 
     public function getId(): ?int
     {
