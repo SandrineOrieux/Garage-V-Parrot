@@ -1,5 +1,8 @@
 twig:
     file_name_pattern: '*.twig'
+    globals:
+        # the value is the service's id
+        openingHours : '@App\Service\OpeningHourGenerator'
 
 when@test:
     twig:
