@@ -14,10 +14,17 @@ class VehicleController extends AbstractController
     {
         $vehiclesList = $repos->findAll();
 
-
-
         return $this->render('vehicle/index.html.twig', [
             'vehiclesList' =>  $vehiclesList,
+        ]);
+    }
+    #[Route('/vehicles/{id}', name: 'app_vehicle_show')]
+    public function showOne(VehicleRepository $repos, $id): Response
+    {
+        $Vehicule = $repos->findOneBy(['id' => $id]);
+
+        return $this->render('vehicle/showOne.html.twig', [
+            'vehicle' =>  $Vehicule,
         ]);
     }
 }

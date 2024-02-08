@@ -1,0 +1,25 @@
+<div class="container my-5">
+	<div class="row mb-2">
+		<h2 class="font-monospace text-info text-center">Nos clients donnent leurs avis : ?/5</h2>
+	</div>
+	<div class="row row-cols-1 row-cols-md-3 gap-2 flex-md-nowrap ">
+		{% for review in bestReviews %}
+			<div class="d-flex p-0 col border-bottom border-end rounded border-3 border-info">
+				<div class="m-0 p-0 w-100 h-100 border border-1 border-primary border-opacity-50">
+					<div class="container">
+						<div class="row">
+							<p class="col text-start">{{review.name}}</p>
+							<p class="col text-end fs-4 text-success">{{review.rate}}/5</p>
+						</div>
+						<div class="row">
+							<p class="col text-center font-monospace">"{{review.comment}}"
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+
+</div>

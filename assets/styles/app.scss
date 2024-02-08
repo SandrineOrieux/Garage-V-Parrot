@@ -18,6 +18,14 @@ $font-size-base: 1rem;
 $font-size-lg: $font-size-base;
 $font-size-lg: $font-size-base;
 
+//Carousel control color
+
+$carousel-control-color: $success;
+$carousel-control-opacity: .9;
+$carousel-control-hover-opacity: .9;
+
+
+
 
 
 @import "~bootstrap/scss/bootstrap";

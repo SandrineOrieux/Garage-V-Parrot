@@ -6,4 +6,22 @@
 
 {% block body %}
 	{% include "/partials/repairServices/_service.html.twig" %}
+
+	<div class="container my-5">
+		<div class="row mb-2">
+			<h1 class="text-center font-monospace fs-3 text-info">Notre histoire</h1>
+		</div>
+		<div class="d-flex row align-items-center">
+
+			<div class="col-12 col-lg-6">
+				<p class="text-success text-center">Vincent Parrot garagiste depuis 15 ans...</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut lacus ut sem rhoncus facilisis in commodo justo. Mauris ornare sem vitae lectus bibendum, ac congue dolor scelerisque. Fusce efficitur libero justo, eu blandit arcu ultrices sed. Mauris ex lacus, finibus sed risus at, congue lobortis sem. Sed nibh sapien, laoreet nec est id, venenatis volutpat risus. Phasellus blandit odio mi, vel ullamcorper ante porta vel. Duis nisi leo, rutrum elementum dui ac, malesuada rutrum nunc. Morbi convallis sollicitudin felis sit amet scelerisque. Muris ex lacus, finibus sed risus at, congue lobortis sem. Sed nibh sapien, laoreet nec est id, venenatis volutpat risus. Phasellus blandit odio mi, vel ullamcorper ante porta vel. Duis nisi leo, rutrum elementum dui ac, malesuada rutrum nunc. Morbi convallis sollicitudin felis sit amet scelerisque.</p>
+			</div>
+			<div class="d-flex col-12 col-lg-6 p-0 h-50  border-bottom border-end border-3 border-info rounded">
+				<img src="{{asset('build/images/atelier.png')}} " alt="image de l'atelier" class="img-fluid h-auto">
+			</div>
+		</div>
+	</div>
+
+	{% include "/partials/reviews/_displayBestReview.html.twig" %}
 {% endblock %}
