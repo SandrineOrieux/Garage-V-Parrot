@@ -1,6 +1,6 @@
 <div class="shadow-sm card col-12 col-md-4 col-lg-3 border-0 border-end border-bottom border-info p-0" style="width: 18rem;">
 	<div class="card-img-top">
-		{% include "/partials/vehicles/_carouselImageVoiture.html.twig" %}
+		<img src="{{vich_uploader_asset(vehicle.images|first, 'imageFile')}}" class="d-block w-100 card-img-top" alt="image de la voiture">
 	</div>
 	<div class="container-fluid card-body">
 		<h5 class="col-12 card-title text-info fw-bold ">{{vehicle.brand}}

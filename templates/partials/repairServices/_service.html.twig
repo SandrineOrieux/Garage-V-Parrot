@@ -2,8 +2,18 @@
 
 	<div class="carousel-inner">
 
-		{% for repairService in repairServices %}
-			<div class="carousel-item active">
+
+		<div class="carousel-item active">
+			<img src="{{asset('build/images/outils.png')}}" class="d-block w-100 opacity-25" alt="...">
+			<div class="carousel-caption d-block text-secondary">
+				<h5 class="text-info font-monospace">{{repairServices|first.name}}
+				</h5>
+				<p>{{repairServices|first.description}}</p>
+			</div>
+		</div>
+
+		{% for repairService in repairServices|slice(2, repairServices|length) %}
+			<div class="carousel-item">
 				<img src="{{asset('build/images/outils.png')}}" class="d-block w-100 opacity-25" alt="...">
 				<div class="carousel-caption d-block text-secondary">
 					<h5 class="text-info font-monospace">{{repairService.name}}
@@ -12,6 +22,7 @@
 				</div>
 			</div>
 		{% endfor %}
+
 	</div>
 	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
