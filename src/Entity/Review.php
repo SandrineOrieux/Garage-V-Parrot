@@ -24,6 +24,7 @@ class Review
     private ?string $name = null;
 
     #[ORM\Column(type: Types::TEXT)]
+    #[Assert\NotBlank(message: "Ce champ est requis")]
     #[Assert\Regex('/^(?!\s*--|\s*\/\*|\s*\*|\s*#).*$/', message: "Votre message ne peut contenir certains caractères spéciaux")]
     private ?string $comment = null;
 
