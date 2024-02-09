@@ -64,4 +64,17 @@ class PagesController extends AbstractController
             'form' => $form
         ]);
     }
+
+    #[Route('/mentions-legales', name: 'app_legal')]
+    public function legal(): Response
+    {
+
+        return $this->render('rgpd-legal/legal.html.twig');
+    }
+    #[Route('/politique-de-confidentialite', name: 'app_privacy')]
+    public function privacy(): Response
+    {
+
+        return $this->render('rgpd-legal/privacy.html.twig');
+    }
 }
