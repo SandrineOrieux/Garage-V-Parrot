@@ -1,0 +1,7 @@
+{{ form_start(form, {'attr': {'class': 'js-form-review'}})}}
+{{form_widget(form._token)}}
+{{ form_row(form.name) }}
+{{ form_row(form.rate) }}
+{{ form_row(form.comment) }}
+<button class="btn rounded-5 btn-secondary ">Enregistrer</button>
+{{form_end(form)}}

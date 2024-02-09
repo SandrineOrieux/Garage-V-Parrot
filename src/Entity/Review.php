@@ -2,9 +2,12 @@
 
 namespace App\Entity;
 
-use App\Repository\ReviewRepository;
+
+
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\ReviewRepository;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: ReviewRepository::class)]
 class Review
@@ -14,13 +17,18 @@ class Review
     #[ORM\Column]
     private ?int $id = null;
 
+    #[Assert\NotBlank(message: "Ce champ est requis")]
+    #[Assert\Length(min: 4, max: 15, minMessage: "Ce champs doit contenir minimum {{ limit }} caractèrtes", maxMessage: "Ce champs doit contenir maximun {{ limit }} caractèrtes")]
+    #[Assert\Regex('/^(?!\s*--|\s*\/\*|\s*\*|\s*#).*$/', message: "Votre nom ne peut contenir certains caractères spéciaux")]
     #[ORM\Column(length: 100)]
     private ?string $name = null;
 
     #[ORM\Column(type: Types::TEXT)]
+    #[Assert\Regex('/^(?!\s*--|\s*\/\*|\s*\*|\s*#).*$/', message: "Votre message ne peut contenir certains caractères spéciaux")]
     private ?string $comment = null;
 
     #[ORM\Column(type: Types::SMALLINT)]
+    #[Assert\Regex('/[1-5]/', message: "La valeur de la note doit être comprise entre 1 et 5.")]
     private ?int $rate = null;
 
     #[ORM\Column]
