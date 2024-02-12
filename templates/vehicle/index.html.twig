@@ -4,6 +4,9 @@
 {% endblock %}
 
 {% block body %}
+	<h1 class="font-monospace fs-4 text-info text-center my-5">Nos véhicules d'occasion :</h1>
+	{% include "/partials/vehicles/_filterVehicle.html.twig" %}
+
 	<div class="row gap-3 d-flex justify-content-center my-3">
 		{% for vehicle in vehiclesList %}
 			{% include "/partials/vehicles/_vehiculeCard.html.twig" %}

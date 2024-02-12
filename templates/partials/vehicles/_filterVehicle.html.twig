@@ -1,0 +1,57 @@
+{{ form_start(form)}}
+{{form_widget(form._token)}}
+
+
+<nav class="navbar navbar-expand-xl">
+	<div class="container-fluid align-items-baseline flex-wrap">
+		<button class="col navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<svg xmlns="http://www.w3.org/2000/svg" class="" width="10" height="10" viewbox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#7d0e13" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+		</button>
+		<h2 class="col col-xl-12 navbar-brand fs-6 text-info text-center text-xl-start my-3 p-0">Filtrer par :</h2>
+		<button class="col navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<svg xmlns="http://www.w3.org/2000/svg" class="" width="10" height="10" viewbox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#7d0e13" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+		</button>
+		<div class="col col-xl-12 collapse navbar-collapse align-items-baseline justify-content-between flex-wrap" id="navbarNav">
+
+
+			<div class="col col-xl-3 d-flex flex-column flex-xl-row align-items-baseline gap-2">
+				<h2 class="fs-6 text-nowrap mt-2">Prix :</h2>
+				<div class="align-self-center text-nowrap m-0 p-0">{{ form_row(form.priceMin) }}</div>
+				<div class="align-self-center text-nowrap">{{ form_row(form.priceMax) }}</div>
+			</div>
+
+
+			<div class="col col-xl-3 d-flex flex-column flex-xl-row align-items-baseline gap-2">
+				<h2 class=" fs-6 text-nowrap mt-2">Km :</h2>
+				<div class="align-self-center text-nowrap">{{ form_row(form.kmMin) }}</div>
+				<div class="align-self-center text-nowrap">{{ form_row(form.kmMax) }}</div>
+			</div>
+
+			<div class="col col-xl-3 d-flex flex-column flex-xl-row align-items-baseline gap-2">
+				<h2 class="fs-6 text-nowrap mt-2">Année :</h2>
+				<div class="align-self-center text-nowrap">{{ form_row(form.yearMin) }}</div>
+				<div class="align-self-center text-nowrap">{{ form_row(form.yearMax) }}</div>
+			</div>
+
+			<div class="col col-xl-1 align-items-baseline text-end">
+				<button class=" btn rounded-5 btn-secondary ">Rechercher</button>
+			</div>
+			<div class="col-12">
+				{% if message %}
+					<p class="text-success mt-2">{{message}}</p>
+				{% endif %}
+
+			</div>
+		</div>
+	</div>
+</nav>
+
+<div class='row'>
+	<div class="col">
+		<h2 class=""></h2>
+	</div>
+
+</div>
+
+
+{{form_end(form)}}
