@@ -8,9 +8,11 @@ use App\Form\FilterVehicleType;
 use App\Repository\VehicleRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Serializer\SerializerInterface;
 
 class VehicleController extends AbstractController
 {
@@ -29,9 +31,10 @@ class VehicleController extends AbstractController
         $form = $this->createForm(FilterVehicleType::class);
         $form->handleRequest($request);
 
-
         if ($form->isSubmitted() && $form->isValid()) {
+
             $filterCriterias = $form->getData();
+
             if ($this->areAllNumericOrNull($filterCriterias)) {
                 //if value min = null et value max != null
                 if ($filterCriterias['priceMin'] == null && $filterCriterias['priceMax']) {
@@ -67,14 +70,20 @@ class VehicleController extends AbstractController
                 $message = 'veuillez entrer un nombre';
             }
 
-
-
             $vehiclesList = $repos->findByCriterias($filterCriterias);
+
+            if ($request->isXmlHttpRequest()) {
+                return new JsonResponse([
+                    'content' => $this->renderView('/partials/vehicles/_vehiculeCard.html.twig', [
+                        'vehiclesList' =>  $vehiclesList,
+                        'form' => $form,
+                    ]),
+                    'message' => $message
+                ]);
+            }
         } else {
             $vehiclesList = $repos->findAll();
         }
-
-
 
         return $this->render('vehicle/index.html.twig', [
             'vehiclesList' =>  $vehiclesList,

@@ -1,4 +1,4 @@
-{{ form_start(form)}}
+{{ form_start(form, {'attr': {'class': 'js-filterVehicle'}})}}
 {{form_widget(form._token)}}
 
 
@@ -33,13 +33,13 @@
 				<div class="align-self-center text-nowrap">{{ form_row(form.yearMax) }}</div>
 			</div>
 
-			<div class="col col-xl-1 align-items-baseline text-end">
+			<div class="col col-xl-1 align-items-baseline">
 				<button class=" btn rounded-5 btn-secondary ">Rechercher</button>
 			</div>
 			<div class="col-12">
-				{% if message %}
-					<p class="text-success mt-2">{{message}}</p>
-				{% endif %}
+
+				<p class="js-message text-success mt-2"></p>
+
 
 			</div>
 		</div>
