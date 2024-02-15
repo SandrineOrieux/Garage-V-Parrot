@@ -1,6 +1,7 @@
 <div class="container my-5">
 	<div class="row mb-2">
-		<h2 class="font-monospace text-info text-center">Nos clients donnent leurs avis : ?/5</h2>
+		<h2 class="font-monospace text-info text-center">Nos clients donnent leurs avis :
+			<span class="js-average">{{average}}</span>/5</h2>
 	</div>
 	<div class="row row-cols-1 row-cols-md-3 gap-2 flex-md-nowrap ">
 		{% for review in bestReviews %}

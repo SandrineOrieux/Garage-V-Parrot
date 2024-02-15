@@ -16,6 +16,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class PagesController extends AbstractController
 {
+
+
     #[Route('/', name: 'app_home')]
     public function index(RepairServiceRepository $repoService, ReviewRepository $repoReview, Request $request, EntityManagerInterface $em): Response
     {
@@ -24,6 +26,10 @@ class PagesController extends AbstractController
 
         //best review
         $bestreview = $repoReview->findBy(['isvalidated' => true], ['rate' => 'DESC'], 3);
+
+        //average
+        $averageRate = ROUND($repoReview->getAverage(), 2);
+
 
         //review form
         $review = new Review();
@@ -41,7 +47,8 @@ class PagesController extends AbstractController
         return $this->render('home/index.html.twig', [
             'repairServices' => $repairServices,
             'bestReviews' => $bestreview,
-            'form' => $form
+            'form' => $form,
+            'average' => $averageRate
         ]);
     }
 
@@ -76,5 +83,12 @@ class PagesController extends AbstractController
     {
 
         return $this->render('rgpd-legal/privacy.html.twig');
+    }
+    #[Route('/averageRate', name: 'app_average_rate')]
+    public function getAverage(ReviewRepository $repoReview)
+    {
+        $averageRate = ROUND($repoReview->getAverage(), 2);
+
+        return $this->json(['average' => $averageRate], 200);
     }
 }

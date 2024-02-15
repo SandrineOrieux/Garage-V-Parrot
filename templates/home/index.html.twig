@@ -5,11 +5,12 @@
 
 
 {% block body %}
+	<h1 class="my-5 text-center font-monospace fs-3 text-info">Nos services :</h1>
 	{% include "/partials/repairServices/_service.html.twig" %}
 
 	<div class="container my-5">
 		<div class="row mb-2">
-			<h1 class="text-center font-monospace fs-3 text-info">Notre histoire</h1>
+			<h2 class="text-center font-monospace fs-3 text-info">Notre histoire :</h2>
 		</div>
 		<div class="d-flex row align-items-center">
 
@@ -29,4 +30,8 @@
 		{% include "/partials/reviews/_formReview.html.twig" %}
 	</div>
 
+{% endblock %}
+{% block javascripts %}
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	{{ encore_entry_script_tags('app') }}
 {% endblock %}
