@@ -25,6 +25,8 @@ class ReviewRepository extends ServiceEntityRepository
     {
         return $this->createQueryBuilder('r')
             ->select('AVG(r.rate) as averageRate')
+            ->where('r.isvalidated = :val')
+            ->setParameter('val', 1)
             ->getQuery()
             ->getSingleScalarResult();
     }
