@@ -9,7 +9,7 @@ if (url === '/vehicles') {
   filter = document.querySelector('.js-filterVehicle');
   list = document.querySelector('.js-vehicleList')
   validationMessage = document.querySelector('.js-message')
-  console.log(filter)
+
 
   filter.addEventListener('submit', (e) => {
     e.preventDefault()
