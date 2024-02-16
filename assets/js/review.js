@@ -1,6 +1,5 @@
 import errorMessage from './1-useFunctions'
 //variables
-const averageRate = document.querySelector('.js-average')
 const formReview = document.querySelector('.js-form-review')
 const url = window.location.pathname
 
@@ -13,11 +12,8 @@ if (url === '/' | url === '/reviews') {
 
     axios.post(url, formData)
       .then(() => {
-        formReview.innerHTML = "<p>Votre évaluation a bien été prise en compte : la note moyenne a été mis à jours, votre commentaire apparaîtra aprés validation d'un administrateur.</p>"
-        axios.get('/averageRate')
-          .then((response) => {
-            averageRate.innerHTML = response.data['average']
-          })
+        formReview.innerHTML = "<p>Votre évaluation a bien été prise en compte : votre commentaire apparaîtra aprés validation d'un administrateur.</p>"
+
       }).catch(() => {
         formReview.innerHTML = errorMessage()
       })
