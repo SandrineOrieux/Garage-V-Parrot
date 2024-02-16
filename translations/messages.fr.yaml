@@ -13,3 +13,29 @@ OpeningHour : Horaire d'ouverture
 User : Employé
 TypeOfVehicles : Types de véhicules
 Vehicle : Véhicules
+Day : Jour
+Am : Matin
+Pm : Après midi
+Created By : Créé par
+Start : Début
+End : Fin
+Name : Nom
+Rate : Note
+Comment : Commentaire
+Is Validated : Validé
+Firstname : Prénom
+Lastname : Nom
+Object : Objet
+Phone : Téléphone
+Is Contacted : Contact
+Title : Titre
+Year : Année
+Kilometer : Km
+Price : Prix
+Number Of Doors : Nombre de portes
+Number Of Seats : Nombre de places
+Power : Puissance
+Fiscal Power : Puissance fiscale
+Image File : Fichier Image
+Number : Nombre
+App\Entity\Brand : Marque

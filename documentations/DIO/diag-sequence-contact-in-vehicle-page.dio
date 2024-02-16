@@ -1,109 +1,148 @@
 <mxfile host="65bd71144e">
     <diagram id="wYmaX7Wk6WVJhjAOhJAz" name="Page-1">
-        <mxGraphModel dx="2066" dy="-492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2102" dy="-313" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="App" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=30;fontColor=#ffffff;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#3A5431;backgroundOutline=0;" vertex="1" parent="1">
-                    <mxGeometry x="-48" y="1878" width="898" height="692" as="geometry"/>
+                <mxCell id="2" value="App" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=30;fontColor=#ffffff;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#3A5431;backgroundOutline=0;" parent="1" vertex="1">
+                    <mxGeometry x="-48" y="1900" width="798" height="560" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwjTnIHI8ouDAxXJUKQEHYWSAA4Q3ewLegQIBRAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;span lang=&quot;en&quot; class=&quot;Y2IQFc&quot;&gt;sequence diagram&lt;/span&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+                <mxCell id="3" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwjTnIHI8ouDAxXJUKQEHYWSAA4Q3ewLegQIBRAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;span lang=&quot;en&quot; class=&quot;Y2IQFc&quot;&gt;sequence diagram&lt;/span&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="16.41" y="1940" width="200" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Visitor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="80" y="2030" width="30" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
-                    <mxGeometry x="90" y="2120" width="10" height="200" as="geometry"/>
-                </mxCell>
-                <mxCell id="6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
-                    <mxGeometry x="425" y="2120" width="10" height="180" as="geometry"/>
-                </mxCell>
-                <mxCell id="7" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1" source="8">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="430" y="2340" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="8" value="Server" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="375" y="2050" width="110" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="9" value="BDD" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="661" y="2050" width="110" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="10" value="contact the garage with form in vehicle detail page" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+                <mxCell id="10" value="contact the garage with form in vehicle detail page" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="280" y="1940" width="325" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" style="edgeStyle=none;html=1;entryX=0.1;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                <mxCell id="24" value="Visitor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="16.409999999999997" y="2050" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="26.409999999999997" y="2140" width="10" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="361.40999999999997" y="2140" width="10" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1" source="28">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="99" y="2162" as="sourcePoint"/>
-                        <mxPoint x="425" y="2162" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="259" y="2162"/>
-                        </Array>
+                        <mxPoint x="366.40999999999997" y="2360" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="12" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;click on 'envoyer' after filling out the form&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="11">
-                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
-                        <mxPoint x="-41" y="-23" as="offset"/>
-                    </mxGeometry>
+                <mxCell id="28" value="Server" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="311.40999999999997" y="2070" width="110" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                <mxCell id="29" value="BDD" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="597.41" y="2070" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=none;html=1;entryX=0;entryY=0.233;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="438.5" y="2182" as="sourcePoint"/>
-                        <mxPoint x="713.5" y="2182" as="targetPoint"/>
+                        <mxPoint x="36.41" y="2182" as="sourcePoint"/>
+                        <mxPoint x="177.41" y="2181.94" as="targetPoint"/>
+                        <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="14" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;send the data&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="13">
+                <mxCell id="31" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;click on 'envoyer' after &lt;/font&gt;&lt;/pre&gt;&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;filling out the form&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=none;" vertex="1" connectable="0" parent="30">
                     <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
-                        <mxPoint x="-40" y="-23" as="offset"/>
+                        <mxPoint x="-12" y="-23" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="15" style="edgeStyle=none;html=1;entryX=0.1;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;startArrow=block;startFill=1;dashed=1;exitX=1.5;exitY=0.523;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                <mxCell id="32" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="440" y="2242.0699999999997" as="sourcePoint"/>
-                        <mxPoint x="711" y="2241.95" as="targetPoint"/>
+                        <mxPoint x="373.40999999999997" y="2219" as="sourcePoint"/>
+                        <mxPoint x="648.41" y="2219" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="16" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;response &lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=none;" vertex="1" connectable="0" parent="15">
+                <mxCell id="33" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;send the data&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=none;" vertex="1" connectable="0" parent="32">
                     <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
-                        <mxPoint x="-39" y="-13" as="offset"/>
+                        <mxPoint x="-18" y="-10" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="17" value="&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="15">
+                <mxCell id="34" style="edgeStyle=none;html=1;entryX=0.1;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;startArrow=block;startFill=1;dashed=1;exitX=1.5;exitY=0.523;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="376.40999999999997" y="2262.0699999999997" as="sourcePoint"/>
+                        <mxPoint x="647.41" y="2261.95" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;response &lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=none;" vertex="1" connectable="0" parent="34">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-29" y="-13" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="34">
                     <mxGeometry x="0.6827" y="-1" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="18" style="edgeStyle=none;html=1;entryX=0.1;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;startArrow=block;startFill=1;dashed=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                <mxCell id="37" style="edgeStyle=none;html=1;entryX=0.1;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;startArrow=block;startFill=1;dashed=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1" source="46">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="99" y="2272" as="sourcePoint"/>
-                        <mxPoint x="425" y="2272" as="targetPoint"/>
+                        <mxPoint x="35.41" y="2292" as="sourcePoint"/>
+                        <mxPoint x="361.40999999999997" y="2292" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="19" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;display confirmation envoi du formulaire&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="18">
+                <mxCell id="38" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;send response&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=none;" vertex="1" connectable="0" parent="37">
                     <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
-                        <mxPoint x="-41" y="-23" as="offset"/>
+                        <mxPoint x="-13" y="-13" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="20" value="" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1" source="9" target="21">
+                <mxCell id="39" value="" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1" source="29" target="40">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="716" y="2640" as="targetPoint"/>
-                        <mxPoint x="716" y="2090" as="sourcePoint"/>
+                        <mxPoint x="652.41" y="2660" as="targetPoint"/>
+                        <mxPoint x="652.41" y="2110" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="21" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
-                    <mxGeometry x="712" y="2160" width="10" height="100" as="geometry"/>
+                <mxCell id="40" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="648.41" y="2180" width="10" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" value="" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1" source="21">
+                <mxCell id="41" value="" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1" source="40">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="717" y="2350" as="targetPoint"/>
-                        <mxPoint x="716" y="2260" as="sourcePoint"/>
+                        <mxPoint x="653.41" y="2370" as="targetPoint"/>
+                        <mxPoint x="652.41" y="2280" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="23" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                <mxCell id="42" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="95" y="2380" as="targetPoint"/>
-                        <mxPoint x="94.5" y="2110" as="sourcePoint"/>
+                        <mxPoint x="31" y="2370" as="targetPoint"/>
+                        <mxPoint x="30.909999999999997" y="2130" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="Client(javaScript)" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="126.41" y="2070" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1" source="46">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="180.91" y="2360" as="targetPoint"/>
+                        <mxPoint x="180.91" y="2110" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1" target="46">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="180.91" y="2360" as="targetPoint"/>
+                        <mxPoint x="180.91" y="2110" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="176.41" y="2147" width="10" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="186.41" y="2200.06" as="sourcePoint"/>
+                        <mxPoint x="366.40999999999997" y="2200" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;send an async request with axios&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=none;" vertex="1" connectable="0" parent="47">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-15" y="-13" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=block;startFill=1;dashed=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="36.41" y="2310" as="sourcePoint"/>
+                        <mxPoint x="176.41" y="2310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;display confirmation &lt;/font&gt;&lt;/pre&gt;&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;envoi du formulaire&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=none;" vertex="1" connectable="0" parent="49">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-2" y="-21" as="offset"/>
                     </mxGeometry>
                 </mxCell>
             </root>

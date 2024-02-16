@@ -15,26 +15,24 @@ Avant de commencer, assurez-vous d'avoir installé :
 - une base de données relationnelles (ex: mariaDB)
 - faire la commande symfony check:requirement et si besoin modifier le fichier php.ini
 
-
 ### Étapes d'installation
 
 1. Clonez ce dépôt : `git clone https://github.com/SandrineOrieux/Garage-V-Parrot.git`
 2. Rendez-vous dans le répertoire du projet : `cd Garage-V-Parrot`
-3. -1 Installez les dépendances via Composer : `composer install`
-3. -2 Installez les dépendances via npm : `npm install`
-4. Configurer le fichier .env pour la base de données et le mail
-5. Eénérer les autoloads : `composer require symfony/runtime`
-6. Créez la base de données : `symfony console doctrine:database:create`
-7. Exécutez les migrations pour créer les tables : `synfony console doctrine:migrations:migrate`
-
+3. Configurer le fichier .env pour la base de données
+4. Installez les dépendances via Composer : `composer install`
+5. Installez les dépendances via npm : `npm install`
+6. Eénérer les autoloads : `composer require symfony/runtime`
+7. Créez la base de données : `symfony console doctrine:database:create`
+8. Exécutez les migrations pour créer les tables : `synfony console doctrine:migrations:migrate`
+9. Ajoutez les fixtures : `symfony console doctrine:fixtures:load`
 
 ## Utilisation
  - Lancez le serveur local : `symfony server:start` ou utilisez votre serveur web habituel.
  - Lancez npm : `npm run build` (pour developpement)
 
 ## Créer un admin
- - Créer un hash du password : `symfony console security:hash-password`
- - Insérer dans la Bdd : ``
+Il est créé grâce aux fixtures avec l'adresse mail : vincent.parrot@garage-v-parrot.com et le mot de passe azerty.
 
 ## Contribuer
 
@@ -88,9 +86,6 @@ https://www.legalplace.fr/guides/mentions-legales/
 
 - faker :
 https://fakerphp.github.io/
-
-- traits :
-https://www.php.net/manual/fr/language.oop5.traits.php
 
 
 
