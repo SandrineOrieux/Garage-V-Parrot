@@ -57,8 +57,6 @@ class VehicleController extends AbstractController
                 }
                 if ($filterCriterias['yearMin']  && $filterCriterias['yearMax'] == null) {
                     $filterCriterias['yearMax'] = date("Y");
-                    dump(date("Y"));
-                    dump($filterCriterias);
                 }
                 if (($filterCriterias['priceMin'] > $filterCriterias['priceMax']) |
                     ($filterCriterias['yearMin'] > $filterCriterias['yearMax']) |
@@ -95,7 +93,7 @@ class VehicleController extends AbstractController
     public function showOne(VehicleRepository $repos, $id, Request  $request, EntityManagerInterface $em): Response
     {
         $Vehicule = $repos->findOneBy(['id' => $id]);
-        dump($Vehicule->getBrand());
+
 
         $contact = new Contact();
         $contact->setIsContacted(false);
