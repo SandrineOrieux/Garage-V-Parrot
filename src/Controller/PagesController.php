@@ -25,7 +25,7 @@ class PagesController extends AbstractController
         $repairServices = $repoService->findAll();
 
         //best review
-        $bestreview = $repoReview->findBy(['isvalidated' => true], ['rate' => 'DESC'], 3);
+        $reviews = $repoReview->findBy(['isvalidated' => true], ['rate' => 'DESC'], 3);
 
         //average
         $averageRate = ROUND($repoReview->getAverage(), 2);
@@ -46,7 +46,7 @@ class PagesController extends AbstractController
 
         return $this->render('home/index.html.twig', [
             'repairServices' => $repairServices,
-            'bestReviews' => $bestreview,
+            'reviews' => $reviews,
             'form' => $form,
             'average' => $averageRate
         ]);
@@ -68,6 +68,34 @@ class PagesController extends AbstractController
         }
 
         return $this->render('contact/index.html.twig', [
+            'form' => $form
+        ]);
+    }
+    #[Route('/reviews', name: 'app_reviews')]
+    public function reviews(ReviewRepository $repoReview,  Request $request, EntityManagerInterface $em): Response
+    {
+        //best review
+        $reviews = $repoReview->findBy(['isvalidated' => true], ['rate' => 'DESC']);
+
+        //average
+        $averageRate = ROUND($repoReview->getAverage(), 2);
+
+
+        //review form
+        $review = new Review();
+        $review->setIsvalidated(false);
+        $form = $this->createForm(ReviewType::class, $review);
+        $form->handleRequest($request);
+
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em->persist($review);
+            $em->flush();
+        }
+
+        return $this->render('reviews/reviews.html.twig', [
+            'reviews' => $reviews,
+            'average' => $averageRate,
             'form' => $form
         ]);
     }

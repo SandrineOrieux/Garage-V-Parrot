@@ -4,7 +4,7 @@ const averageRate = document.querySelector('.js-average')
 const formReview = document.querySelector('.js-form-review')
 const url = window.location.pathname
 
-if (url === '/') {
+if (url === '/' | url === '/reviews') {
 
   formReview.addEventListener('submit', (e) => {
     e.preventDefault()

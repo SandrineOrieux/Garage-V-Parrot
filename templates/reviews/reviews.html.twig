@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Témoignage
+{% endblock %}
+
+{% block body %}
+	{% include "/partials/reviews/_displayBestReview.html.twig" %}
+	<div class="my-5">
+		<h2 class="font-monospace fs-3 text-info text-center">Votre avis compte pour nous !</h2>
+		{% include "/partials/reviews/_formReview.html.twig" %}
+	</div>
+{% endblock %}
