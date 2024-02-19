@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="mETmnVZE57GePqD7Dpf7" name="Page-1">
-        <mxGraphModel dx="1410" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1206" dy="596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -89,7 +89,7 @@
                 <mxCell id="43" value="US2 Présenter les services" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" parent="1" vertex="1">
                     <mxGeometry x="510" y="730" width="280" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="45" value="Les différents services de réparation doivent apparaitre sur la page d'accueil du site. Ces informations peuvent être modifier seulement par l'admin depuis son espace." style="rounded=0;whiteSpace=wrap;fontSize=12;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;spacing=0;fontColor=#000000;" parent="1" vertex="1">
+                <mxCell id="45" value="Les différents services de réparation doivent apparaitre sur la page d'accueil du site. Ces informations peuvent être modifiées seulement par l'admin depuis son espace." style="rounded=0;whiteSpace=wrap;fontSize=12;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;spacing=0;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="510" y="875" width="280" height="85" as="geometry"/>
                 </mxCell>
                 <mxCell id="46" value="&lt;font color=&quot;#000000&quot;&gt;User Story 3&lt;br&gt;&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;" parent="1" vertex="1">
@@ -143,7 +143,7 @@
                 <mxCell id="82" value="US3&amp;nbsp;Définir les horaires d’ouverture" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" parent="1" vertex="1">
                     <mxGeometry x="920" y="730" width="310" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="84" value="Les horaires d'ouverture du garage doivent-être&#10; visible sur le footer sur tous le site. ces horraires seront modifiables depuis l'espace admin." style="rounded=0;whiteSpace=wrap;fontSize=12;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;spacing=0;fontColor=#000000;" parent="1" vertex="1">
+                <mxCell id="84" value="Les horaires d'ouverture du garage doivent-être &#10;visibles sur le footer sur tout le site. Ces horaires seront modifiables depuis l'espace administrateur." style="rounded=0;whiteSpace=wrap;fontSize=12;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;spacing=0;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="920" y="875" width="310" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="85" value="&lt;font color=&quot;#000000&quot;&gt;User Story 6&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;fontFamily=Helvetica;fontColor=rgb(240, 240, 240);" parent="1" vertex="1">
@@ -311,7 +311,7 @@
                 <mxCell id="199" value="US6&amp;nbsp;Contacter le garage" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" parent="1" vertex="1">
                     <mxGeometry x="2193" y="730" width="377" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="200" value="Les visiteurs pourront joindre le garage par téléphone ou en remplissant un formulaire de contact en ligne.&#10;Dans le cas d'un formulaire, il devra alors fournir son nom, prénom, adresse e-mail, numéro de téléphone et un message. Toutes les informations de contact devront être visibles en bas de chaque annonce d’un véhicule d’occasion. Le sujet du formulaire sera alors le titre de l'annonce pour facilité le recontact de l'employé." style="rounded=0;whiteSpace=wrap;fontSize=12;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;spacing=0;fontColor=#000000;spacingLeft=2;spacingRight=2;" parent="1" vertex="1">
+                <mxCell id="200" value="Les visiteurs pourront joindre le garage par téléphone ou en remplissant un formulaire de contact en ligne.&#10;Dans le cas d'un formulaire, il devra alors fournir son nom, prénom, adresse e-mail, numéro de téléphone et un message. Toutes les informations de contact devront être visibles en bas de chaque annonce d’un véhicule d’occasion. Le sujet du formulaire sera alors le titre de l'annonce pour facilité le recontacte de l'employé." style="rounded=0;whiteSpace=wrap;fontSize=12;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;spacing=0;fontColor=#000000;spacingLeft=2;spacingRight=2;" parent="1" vertex="1">
                     <mxGeometry x="2193" y="875" width="377" height="125" as="geometry"/>
                 </mxCell>
                 <mxCell id="201" value="&lt;font color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;VISITEUR&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" parent="1" vertex="1">
