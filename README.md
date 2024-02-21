@@ -77,6 +77,9 @@ https://github.com/dustin10/VichUploaderBundle/blob/master/docs/index.md
 - Icones du dashbord :
 https://fontawesome.com
 
+- Query builder :
+https://www.doctrine-project.org/projects/doctrine-orm/en/3.0/reference/query-builder.html
+
 - Requête ajax avec axios :
 https://axios-http.com/fr/docs/intro
 
